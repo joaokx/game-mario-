@@ -69,6 +69,10 @@ h1 img {
     animation: jump 500ms ease-out;
 }
 
+.colisao{
+    animation: none;
+}
+
 .clouds{
     width: 550px;
     position: absolute;

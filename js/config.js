@@ -30,12 +30,19 @@ const loop  = setInterval(() => {
 
        clearInterval(loop)
 
-   }else{
-    mario.innerHTML = `game over` 
    }
 
 
 }, 10 )
+ const colisao = ()=>{
+    pipe.classList.add('colisao');
+
+    setTimeout(() =>{
+        pipe.classList.remove('colisao');
+    },500);
+ }
 
 
+document.addEventListener('keydown', jump);
 
+document.addEventListener('animationend', colisao);
